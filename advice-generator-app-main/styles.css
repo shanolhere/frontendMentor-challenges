@@ -1,0 +1,95 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+body{
+ font-family: 'Manrope', sans-serif;
+ font-size:28px;
+ background: hsl(218, 23%, 16%);
+ color:hsl(193, 38%, 86%);
+ margin:0 auto;
+ text-align:center;
+}
+ nav{
+   margin:1rem;
+   display:flex;
+   justify-content: flex-end;
+   align-items:center;
+   gap:15px;
+   color:hsl(150, 100%, 66%);
+   /* background:red; */
+ }
+ .advice{
+   display:flex;
+   flex-direction: column;
+   justify-content:center;
+   align-items:center;
+   gap:20px;
+   padding:2rem 2rem;
+   /* background:red; */
+ }
+ .adviceBox{
+
+   position:relative;
+   margin:5rem auto;
+   display:flex;
+   flex-direction: column;
+   justify-content:center;
+   align-items:center;
+  background:hsl(217, 19%, 24%);
+   width:450px;
+   height: 390px;
+   max-width:auto;
+   max-height:auto;
+   border-radius:10px;
+ }
+small{
+  color:hsl(150, 100%, 66%);
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  font-weight:bold;
+}
+h3{
+  color:hsl(193, 38%, 86%);
+}
+
+button{
+  position:absolute;
+  outline:none;
+  border:none;
+  font-size:26px;
+  padding:10px;
+  border-radius:50%;
+  aspect-ratio:1;
+  background:hsl(150, 100%, 66%);
+  bottom:-20px;
+
+
+}
+button:hover,
+button:active{
+  cursor:pointer;
+  animation: glow 2s ease-in-out infinite;
+}
+
+@keyframes glow{
+  ffrom {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px hsl(150, 100%, 66%), 0 0 40px hsl(150, 100%, 66%), 0 0 50px hsl(150, 100%, 66%), 0 0 60px hsl(150, 100%, 66%), 0 0 70px hsl(150, 100%, 66%);
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px hsl(150, 100%, 66%), 0 0 40px hsl(150, 100%, 66%), 0 0 50px hsl(150, 100%, 66%), 0 0 60px hsl(150, 100%, 66%), 0 0 70px hsl(150, 100%, 66%), 0 0 80px hsl(150, 100%, 66%);
+  }
+}
+
+.attribution{
+  text-align:center;
+}
+.light, .dark {
+  cursor:pointer;
+}
+.light{
+  display:none;
+}
